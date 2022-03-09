@@ -12,7 +12,7 @@ export const Timeline = () => {
   const [isShowingFullTimeline, showFullTimeline] = useState(false);
 
   const Step = ({ title, children }: ChildrenStringProps) => (
-    <StepLi>
+    <StepLi data-aos="zoom-in-left">
       <div>
         <svg viewBox="0 0 24 24">
           <g

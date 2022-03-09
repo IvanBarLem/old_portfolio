@@ -22,10 +22,7 @@ export default function Home() {
             Java y React con 2 años de experiencia. Habilidad en la creación de
             Inteligencias Artificiales. Aptitudes en diseño gráfico y creación
             de contenido para poder ofrecer una experiencia de usuario inmersiva
-            y atractiva en todo tipo de interfaces. –&nbsp;
-            <Link href="/about">
-              <a>más sobre mí.</a>
-            </Link>
+            y atractiva en todo tipo de interfaces.
           </p>
         </ContentWrapper>
         <RoundImage

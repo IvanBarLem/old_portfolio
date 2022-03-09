@@ -25,14 +25,11 @@ export const Footer = ({ darkTheme }: StringProps) => {
             <FlexLinks>
               <Navigation href="/" text="Inicio" />
               <Navigation href="/projects" text="Proyectos" />
-              <Navigation href="/blog" text="Blog" />
+              <Navigation href="/testimonials" text="Testimonials" />
             </FlexLinks>
             <FlexLinks>
+              <Navigation href="/blog" text="Blog" />
               <Navigation href="/contact" text="Contacto" />
-              <Navigation href="/testimonials" text="Testimonials" />
-              <ExternalLink href="https://twitter.com/Adrinlolx">
-                Twitter
-              </ExternalLink>
             </FlexLinks>
             <FlexLinks>
               <ExternalLink href="https://www.linkedin.com/in/ivanbarlem/">
@@ -40,9 +37,6 @@ export const Footer = ({ darkTheme }: StringProps) => {
               </ExternalLink>
               <ExternalLink href="https://github.com/IvanBarLem">
                 GitHub
-              </ExternalLink>
-              <ExternalLink href="https://instagram.com/ivan.b.l">
-                Instagram
               </ExternalLink>
             </FlexLinks>
           </GridContainer>

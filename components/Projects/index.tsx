@@ -21,7 +21,7 @@ export const Projects = () => {
               key={id}
               rel="noopener noreferrer"
             >
-              <Item>
+              <Item data-aos="zoom-in-left">
                 <Flex>
                   <Flex>
                     <span className="item-number">{`${id < 9 ? "0" : ""}${

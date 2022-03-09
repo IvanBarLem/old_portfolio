@@ -18,7 +18,11 @@ export const TestimonialList = () => {
   return (
     <Container>
       {data?.map((item: StringProps, id: number) => (
-        <Item isLeft={id % 2 !== 0} key={id}>
+        <Item
+          isLeft={id % 2 !== 0}
+          key={id}
+          data-aos={id % 2 === 0 ? "zoom-in-right" : "zoom-in-left"}
+        >
           {item.picture && (
             <Image
               src={`/assets/svg/${
