@@ -1,4 +1,3 @@
-/* import NowPlaying from "components/NowPlaying"; */
 import { Navigation } from "components/Layout/Navigation";
 import { ExternalLinkProps, StringProps } from "lib/types";
 import ScrollToTop from "components/Layout/ScrollToTop";
@@ -22,29 +21,29 @@ export const Footer = ({ darkTheme }: StringProps) => {
       <StyledContainer>
         <Flex justify="center" direction="column">
           <hr />
-          {/* <NowPlaying /> */}
           <GridContainer>
             <FlexLinks>
-              <Navigation href="/" text="Home" />
+              <Navigation href="/" text="Inicio" />
+              <Navigation href="/projects" text="Proyectos" />
               <Navigation href="/blog" text="Blog" />
-              <Navigation href="/testimonials" text="Testimonials" />
             </FlexLinks>
             <FlexLinks>
+              <Navigation href="/contact" text="Contacto" />
+              <Navigation href="/testimonials" text="Testimonials" />
               <ExternalLink href="https://twitter.com/Adrinlolx">
                 Twitter
               </ExternalLink>
-              <ExternalLink href="https://github.com/Adrinlol">
-                GitHub
-              </ExternalLink>
-              <ExternalLink href="https://www.linkedin.com/in/lasha-kakabadze/">
-                LinkedIn
-              </ExternalLink>
             </FlexLinks>
             <FlexLinks>
-              <ExternalLink href="https://www.linkedin.com/in/lasha-kakabadze/">
-                Download
+              <ExternalLink href="https://www.linkedin.com/in/ivanbarlem/">
+                LinkedIn
               </ExternalLink>
-              <Navigation href="/top-tracks" text="Top Tracks" />
+              <ExternalLink href="https://github.com/IvanBarLem">
+                GitHub
+              </ExternalLink>
+              <ExternalLink href="https://instagram.com/ivan.b.l">
+                Instagram
+              </ExternalLink>
             </FlexLinks>
           </GridContainer>
           <ScrollToTop darkTheme={darkTheme} />

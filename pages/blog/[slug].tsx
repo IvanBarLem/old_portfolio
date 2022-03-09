@@ -24,7 +24,7 @@ interface ParamsProps {
 export default function Blog({ filteredPost, title }: BlogProps) {
   return (
     <Container title={`${title} - Lasha Kakabadze`}>
-{/*       <BlogFlex>
+      <BlogFlex>
         <AuthorContainer>
           <RoundImage
             src={ProfilePicture}
@@ -40,13 +40,13 @@ export default function Blog({ filteredPost, title }: BlogProps) {
       </BlogFlex>
       <DescriptionContainer
         dangerouslySetInnerHTML={{ __html: filteredPost?.description }}
-      /> */}
+      />
     </Container>
   );
 }
 
-/*export async function getStaticProps({ params }: ParamsProps) {
-   const res = await fetch(mediumUserUrl);
+export async function getStaticProps({ params }: ParamsProps) {
+  const res = await fetch(mediumUserUrl);
   const posts = await res.json();
   const filteredPost = posts.items.filter(
     (post: PostsProps) => convertToSlug(post.title) === params.slug
@@ -58,11 +58,11 @@ export default function Blog({ filteredPost, title }: BlogProps) {
       title: filteredPost.title,
     },
     revalidate: 10,
-  }; 
-}*/
+  };
+}
 
-/*export async function getStaticPaths() {
-   const posts = await fetch(mediumUserUrl);
+export async function getStaticPaths() {
+  const posts = await fetch(mediumUserUrl);
 
   const stories = await posts.json();
 
@@ -72,8 +72,8 @@ export default function Blog({ filteredPost, title }: BlogProps) {
     },
   }));
 
-  return { paths, fallback: "blocking" }; 
-}*/
+  return { paths, fallback: "blocking" };
+}
 
 const DescriptionContainer = styled.div`
   ul,

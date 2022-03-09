@@ -9,9 +9,8 @@ export const Projects = () => {
 
   return (
     <Container>
-      <h3>Featured Projects</h3>
       {data?.message ? (
-        <h4>Maximum rate limit reached.</h4>
+        <h4>Se ha alcanzado el límite máximo.</h4>
       ) : (
         data?.popular.map((item: ProjectsProps, id: number) => {
           return (
