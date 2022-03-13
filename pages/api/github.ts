@@ -8,7 +8,7 @@ export default async function handler(
   try {
     if (req.method === "GET") {
       const userReposResponse = await fetch(
-        "https://api.github.com/users/facebook/repos?per_page=10&sort=created&direction=desc"
+        "https://api.github.com/users/facebook/repos?sort=created&order=asc"
       );
 
       const repositories = await userReposResponse.json();
