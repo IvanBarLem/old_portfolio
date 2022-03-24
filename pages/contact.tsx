@@ -4,19 +4,26 @@ import { devices } from "lib/displayDevice";
 import { StringProps } from "lib/types";
 import Image from "next/image";
 import styled from "styled-components";
-import ProfilePicture from "../public/assets/png/Ivan.png";
+import ProfilePicture from "../public/assets/jpg/Ivan.jpg";
 
 export default function Contact() {
   return (
     <Container title="Contacto - Iván Barrientos Lema">
       <HeroFlex align="flex-start">
         <Image
+          data-aos="fade-left"
+          data-aos-delay="500"
+          data-aos-duration="1000"
           src={ProfilePicture}
           alt="Picture of Ivan"
           width="500px"
           height="500px"
         />
-        <ContentWrapper>
+        <ContentWrapper
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
           <h1>Información de contacto</h1>
           <p>
             Puedes contactarme en mi email personal{" "}

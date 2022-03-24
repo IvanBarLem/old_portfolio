@@ -4,7 +4,7 @@ import { Projects } from "components/Projects";
 import { Paragraph } from "pages/blog";
 
 export default function Testimonials() {
-  const pending = true;
+  const pending = false;
   return (
     <Container title="Proyectos - Iván Barrientos Lema">
       {pending && <RevisionPending />}

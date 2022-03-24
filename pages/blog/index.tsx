@@ -4,7 +4,7 @@ import { Posts } from "components/Posts";
 import { RevisionPending } from "components/Badgets/Revision";
 
 export default function Blog() {
-  const pending = true;
+  const pending = false;
   return (
     <Container title="Blog - Lasha Kakabadze">
       {pending && <RevisionPending />}

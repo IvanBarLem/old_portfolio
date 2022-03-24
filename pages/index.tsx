@@ -8,13 +8,13 @@ import { devices } from "lib/displayDevice";
 
 import { Flex } from "components/Layout/Container/styles";
 
-import ProfilePicture from "public/assets/png/Ivan.png";
+import ProfilePicture from "public/assets/jpg/Ivan.jpg";
 
 export default function Home() {
   return (
     <Container>
       <HeroFlex align="flex-start">
-        <ContentWrapper>
+        <ContentWrapper data-aos="fade-left" data-aos-duration="1000">
           <h1>Iván Barrientos Lema 👋</h1>
           <h2>Ingeniero Informático</h2>
           <p>
@@ -26,6 +26,8 @@ export default function Home() {
           </p>
         </ContentWrapper>
         <RoundImage
+          data-aos="fade-right"
+          data-aos-duration="1000"
           src={ProfilePicture}
           alt="Picture of Ivan"
           width="150px"

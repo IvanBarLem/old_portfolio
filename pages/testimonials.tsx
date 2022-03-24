@@ -4,7 +4,7 @@ import { TestimonialList } from "components/TestimonialList";
 import { Paragraph } from "pages/blog";
 
 export default function Testimonials() {
-  const pending = true;
+  const pending = false;
   return (
     <Container title="Testimonials - Lasha Kakabadze">
       {pending && <RevisionPending />}

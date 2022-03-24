@@ -21,7 +21,11 @@ export const Projects = () => {
               key={id}
               rel="noopener noreferrer"
             >
-              <Item data-aos="zoom-in-left">
+              <Item
+                data-aos="fade-left"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <Flex>
                   <Flex>
                     <span className="item-number">{`${id < 9 ? "0" : ""}${

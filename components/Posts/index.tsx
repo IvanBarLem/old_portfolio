@@ -16,7 +16,11 @@ export const Posts = ({ title }: StringProps) => {
       {data?.feed?.map((item: PostsProps, id: number) => {
         return (
           <Link href={`/blog/${convertToSlug(item.title)}`} key={id}>
-            <Item data-aos="zoom-in-left">
+            <Item
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <Flex>
                 <Flex>
                   <span className="item-number">{`${id < 9 ? "0" : ""}${
