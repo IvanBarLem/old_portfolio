@@ -1,13 +1,10 @@
 import styled from "styled-components";
 import Container from "components/Layout/Container";
 import { Posts } from "components/Posts";
-import { RevisionPending } from "components/Badgets/Revision";
 
 export default function Blog() {
-  const pending = false;
   return (
     <Container title="Blog - Lasha Kakabadze">
-      {pending && <RevisionPending />}
       <h1>Blog 📖</h1>
       <Paragraph>
         En los últimos años, me he dado cuenta que todo el esfuerzo que he

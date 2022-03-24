@@ -1,13 +1,10 @@
-import { RevisionPending } from "components/Badgets/Revision";
 import Container from "components/Layout/Container";
 import { TestimonialList } from "components/TestimonialList";
 import { Paragraph } from "pages/blog";
 
 export default function Testimonials() {
-  const pending = false;
   return (
     <Container title="Testimonials - Lasha Kakabadze">
-      {pending && <RevisionPending />}
       <h1>Testimonials</h1>
       <Paragraph>
         Outside of being employed full-time at Vabaco, I sometimes freelance on{" "}
