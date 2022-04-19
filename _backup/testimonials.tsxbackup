@@ -1,4 +1,4 @@
-/*import Container from "components/Layout/Container";
+import Container from "components/Layout/Container";
 import { TestimonialList } from "components/TestimonialList";
 import { Paragraph } from "pages/blog";
 
@@ -23,4 +23,4 @@ export default function Testimonials() {
       <TestimonialList />
     </Container>
   ); 
-}*/
+}
