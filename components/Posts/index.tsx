@@ -8,15 +8,19 @@ import { Container, Item, PostsDescription } from "components/Posts/styles";
 import { Flex } from "components/Layout/Container/styles";
 
 export const Posts = ({ title }: StringProps) => {
-  /* const { data } = useSWR<Data>("/api/medium", fetcher); */
+  const { data } = useSWR<Data>("/api/medium", fetcher);
 
   return (
     <Container>
-{/*       <h3>{title}</h3>
+      <h3>{title}</h3>
       {data?.feed?.map((item: PostsProps, id: number) => {
         return (
           <Link href={`/blog/${convertToSlug(item.title)}`} key={id}>
-            <Item>
+            <Item
+              data-aos="zoom-in-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <Flex>
                 <Flex>
                   <span className="item-number">{`${id < 9 ? "0" : ""}${
@@ -34,7 +38,7 @@ export const Posts = ({ title }: StringProps) => {
             </Item>
           </Link>
         );
-      })} */}
+      })}
     </Container>
   );
 };

@@ -8,7 +8,7 @@ import { PostsProps } from "lib/types";
 import { Flex } from "components/Layout/Container/styles";
 import Container from "components/Layout/Container";
 
-import ProfilePicture from "public/assets/png/Lasha.png";
+import ProfilePicture from "public/assets/jpg/Ivan.jpg";
 
 interface BlogProps {
   filteredPost: PostsProps;
@@ -23,30 +23,31 @@ interface ParamsProps {
 
 export default function Blog({ filteredPost, title }: BlogProps) {
   return (
-    <Container title={`${title} - Lasha Kakabadze`}>
-{/*       <BlogFlex>
+    <Container title={`${title} - Iván Barrientos Lema`}>
+      <BlogFlex>
         <AuthorContainer>
           <RoundImage
             src={ProfilePicture}
-            alt="Picture of Lasha"
+            alt="Picture of Iván"
             width="45px"
             height="45px"
           />
-          <h4>Lasha Kakabadze / {formatDate(filteredPost.pubDate)}</h4>
+          <h4>Iván Barrientos Lema / {formatDate(filteredPost.pubDate)}</h4>
         </AuthorContainer>
         <div>
-          {Number(filteredPost.description.length / 1750).toFixed(0)} min read
+          {Number(filteredPost.description.length / 1750).toFixed(0)} minutos de
+          lectura
         </div>
       </BlogFlex>
       <DescriptionContainer
         dangerouslySetInnerHTML={{ __html: filteredPost?.description }}
-      /> */}
+      />
     </Container>
   );
 }
 
-/*export async function getStaticProps({ params }: ParamsProps) {
-   const res = await fetch(mediumUserUrl);
+export async function getStaticProps({ params }: ParamsProps) {
+  const res = await fetch(mediumUserUrl);
   const posts = await res.json();
   const filteredPost = posts.items.filter(
     (post: PostsProps) => convertToSlug(post.title) === params.slug
@@ -58,11 +59,11 @@ export default function Blog({ filteredPost, title }: BlogProps) {
       title: filteredPost.title,
     },
     revalidate: 10,
-  }; 
-}*/
+  };
+}
 
-/*export async function getStaticPaths() {
-   const posts = await fetch(mediumUserUrl);
+export async function getStaticPaths() {
+  const posts = await fetch(mediumUserUrl);
 
   const stories = await posts.json();
 
@@ -72,8 +73,8 @@ export default function Blog({ filteredPost, title }: BlogProps) {
     },
   }));
 
-  return { paths, fallback: "blocking" }; 
-}*/
+  return { paths, fallback: "blocking" };
+}
 
 const DescriptionContainer = styled.div`
   ul,

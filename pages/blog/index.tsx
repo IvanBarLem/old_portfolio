@@ -5,17 +5,23 @@ import { Posts } from "components/Posts";
 export default function Blog() {
   return (
     <Container title="Blog - Lasha Kakabadze">
-      <h1>Blog</h1>
+      <h1>Blog 📖</h1>
       <Paragraph>
-        In the recent years, I've found out that writing blogs is a great way to
-        reinforce knowledge, as it helps me to write a clear documentation.{" "}
-        <br />
-        Initially, my blogs were intended for one audience - myself. But once I
-        started more people people reading my articles, it was time to express
-        my thoughts more clearly, organize my writing and read more about the
-        particular topic I was writing about.
+       {/* En los últimos años, me he dado cuenta que todo el esfuerzo que he
+        empleado en la carrera lo podía aprovechar para{" "}
+        <b>enseñar todo lo aprendido</b>. De esta manera he decidido escribir
+        estos blogs, con el objetivo de <b>reforzar los conocimientos</b> ya
+        aprendidos y, además, me ayuda a redactar una <b>documentación clara</b>{" "}
+        para mi YO futuro. <br />
+        El principal objetivo de estos blogs es la elaboración de una{" "}
+        <i>memoria </i> de todos los trabajos realizados, de esta manera
+        refuerzo el progreso y apoyo la formación que estoy teniendo. Como son
+        de ayuda para mí, también lo pueden ser para otras personas, por este
+        motivo he decidido compartirlos, espero que te sean de ayuda y que
+        aprendas algo nuevo.*/}
       </Paragraph>
-      {/* <Posts title="All Stories" /> */}
+      Actualmente no hay ninguna entrada disponible.
+      {/* <Posts title="Todas las publicaciones" /> */}
     </Container>
   );
 }

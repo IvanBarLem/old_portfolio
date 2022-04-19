@@ -12,7 +12,7 @@ export const Timeline = () => {
   const [isShowingFullTimeline, showFullTimeline] = useState(false);
 
   const Step = ({ title, children }: ChildrenStringProps) => (
-    <StepLi>
+    <StepLi data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
       <div>
         <svg viewBox="0 0 24 24">
           <g
@@ -34,12 +34,41 @@ export const Timeline = () => {
 
   const FullTimeline = () => (
     <>
-      <Divider />
-      <Year>2014</Year>
+      <Year>2020</Year>
       <ul>
-        <Step title="Started at University">
-          I started studying Business Administration at The Agricultural
-          University of Georgia.
+        <Step title="Comienzo el Trabajo de Fin de Grado 👁️">
+          Comienzo un proyecto de investigación e innovación con la colaboración
+          del{" "}
+          <a
+            href="http://www.varpa.es/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Grupo de Investigación VARPA
+          </a>{" "}
+          . Se propone desarrollar una aplicación web para la gestión médica que
+          incorpore un sistema inteligente capaz de diagnosticar enfermedades
+          oculares en imágenes oftalmológicas.
+        </Step>
+        <Step title="Me uno a Altia">
+          Realizo prácticas curriculares en {" "}
+          <a
+            href="https://www.altia.es/es/altia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Altia
+          </a>{" "}
+          - empresa española que ofrece servicios de consultoría y prestación de
+          servicios TIC.
+        </Step>
+      </ul>
+      <Divider />
+      <Year>2016</Year>
+      <ul>
+        <Step title="Comienzo en la Universidad 👶🏻">
+          Empiezo una nueva etapa estudiando Ingeniería Informática en la
+          Universidad de A Coruña.
         </Step>
       </ul>
       <Divider />
@@ -48,99 +77,111 @@ export const Timeline = () => {
 
   return (
     <>
-      <h3>Timeline</h3>
+      <h3>Línea de tiempo</h3>
+      <Year>2022</Year>
+      <ul>
+        <Step title="Nuevo proyecto 💊">
+          Inicio un nuevo proyecto en colaboración con el{" "}
+          <a
+            href="https://www.idisantiago.es/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instituto de Investigación Sanitaria de Santiago de Compostela
+          </a>.{" "}
+           Este proyecto consiste en el desarrollo software de una plataforma clínica, integrando gestión de pacientes y
+          dosificación de medicamentos a través de modelos predictivos.
+        </Step>
+        <Step title="Publicación del primer artículo ⭐">
+          <a
+            href="https://ruc.udc.es/dspace/handle/2183/29849"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dx-OPHTA
+          </a>{" "}
+          se publica en el libro{" "}
+          <a
+            href="https://eurocast2022.fulp.ulpgc.es/sites/default/files/Eurocast_2022_Extended_Abstract_Book.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>Eurocast 2022 Extended Abstract Book</i>
+          </a>{" "}
+          como{" "}
+          <i>
+            <b>
+              Clinical decision support tool for the identification of
+              pathological structures associated with age-related macular
+              degeneration.
+            </b>
+          </i>
+        </Step>
+      </ul>
+      <Divider />
       <Year>2021</Year>
       <ul>
-        <Step title="Joined Vabaco">
-          I'm thrilled about this new role as a React Developer, helping create
-          enterprise web applications for healthcare services.
-        </Step>
-      </ul>
-      <Divider />
-      <Year>2020</Year>
-      <ul>
-        <Step title="Top Rated Freelancer on Upwork">
-          I'm very exited to represent the top 10% of talent on Upwork. The
-          grind has just begun!
-        </Step>
-        <Step title="Open-Source React Template">
-          Created a{" "}
+        <Step title="Continúo formándome">
+          Comienzo el Master Universitario en Ingeniería Informática -{" "}
           <a
-            href="https://github.com/Adrinlol/landy-react-template"
+            href="https://estudos.udc.es/es/study/start/4502V02"
             target="_blank"
             rel="noopener noreferrer"
           >
-            template
+            MUEI
           </a>{" "}
-          that comes with multi-lingual support, smooth animations, contact form
-          built with React Hooks and error validations, set of ready to use
-          sections and most importantly, a PERFECT score on Lighthouse.
-        </Step>
-        <Step title="First Article on Medium">
-          Wrote my{" "}
+          - premiado con la mención hacia la excelencia y con el sello
+          Internacional{" "}
           <a
-            href="https://medium.com/swlh/setting-up-and-deploying-a-twitter-app-from-scratch-twitter-bot-article-8b6798d68a16"
+            href="https://www.ccii.es/certificaciones/euroinf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            first article
-          </a>{" "}
-          on how to set up an deploy a twitter app from scratch. This bot was
-          able to search, retweet and like all the tweets containing the
-          provided keyword.
-        </Step>
-        <Step title="Second Project for the Open-Source">
-          This was around the time when I was reading a lot about JavaScript, so
-          instead of having bunch of different articles and books, I decided to
-          create{" "}
-          <a
-            href="https://github.com/Adrinlol/javascript-guide"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            one project
-          </a>{" "}
-          aimed at combining basic to advanced concepts.
-        </Step>
-        <Step title="Wrote First Open-Source Project">
-          Open-sourced{" "}
-          <a
-            href="https://github.com/Adrinlol/javascript-color-gradient"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            my first project
+            Euro-Inf
           </a>
-          , currently holding over 1.7k monthly downloads. <br />
-          It handles the login behind generating an array of color gradients by
-          providing start and finish colors, as well as the required number of
-          midpoints.
         </Step>
-        <Step title="Completed My First Project on Upwork">
-          Developed a responsive, multi-language landing page for an AI
-          consulting company using React.js.
+        <Step title="Dando visibilidad al proyecto">
+          <a
+            href="https://ruc.udc.es/dspace/handle/2183/29849"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dx-OPHTA
+          </a>{" "}
+          se propone a la 18ª Conferencia Internacional sobre Teoría de Sistemas
+          Asistidos por Ordenador -{" "}
+          <a
+            href="https://eurocast2022.fulp.ulpgc.es/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Eurocast 2022
+          </a>{" "}
+          - celebrado en Las Palmas de Gran Canaria, España.
         </Step>
-      </ul>
-      <Divider />
-      <Year>2018</Year>
-      <ul>
-        <Step title="Joined Circle">
-          I was offered and accepted a full-time offer with Circle - a Software
-          Development company in Georgia.
+        <Step title="Me gradúo en Ingeniería Informática 🧑🏻‍🎓">
+          Finalizo el Grado Universitario de Ingiería Informática en la
+          Universidad de Coruña con dobre mención en Ingeniería del Software y
+          Computación.
         </Step>
-        <Step title="Started Learning Frontend Development">
-          Got hooked on learning Frontend, but I wasn't sure where or how to
-          start. <br />
-          There were so many options available not only programming
-          language-wise, but regarding tools, frameworks, and technologies as
-          well.
+        <Step title="Finaliza el desarrollo del Trabajo de Fin de Grado 🎯">
+          Después de 6 meses consigo alcanzar el objetivo propuesto y finalizo el
+          desarrollo de la aplicación.{" "}
+          <a
+            href="https://ruc.udc.es/dspace/handle/2183/29849"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Dx-OPHTA
+          </a>{" "}
+          sale a la luz y el proyecto tiene muy buena acogida.
         </Step>
       </ul>
       {isShowingFullTimeline ? (
         <FullTimeline />
       ) : (
         <MoreButton type="button" onClick={() => showFullTimeline(true)}>
-          See More
+          Mostrar más
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

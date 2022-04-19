@@ -9,9 +9,8 @@ export const Projects = () => {
 
   return (
     <Container>
-      <h3>Featured Projects</h3>
       {data?.message ? (
-        <h4>Maximum rate limit reached.</h4>
+        <h4>Se ha alcanzado el límite máximo.</h4>
       ) : (
         data?.popular.map((item: ProjectsProps, id: number) => {
           return (
@@ -22,7 +21,11 @@ export const Projects = () => {
               key={id}
               rel="noopener noreferrer"
             >
-              <Item>
+              <Item
+                data-aos="zoom-in-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <Flex>
                   <Flex>
                     <span className="item-number">{`${id < 9 ? "0" : ""}${
