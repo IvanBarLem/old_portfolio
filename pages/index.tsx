@@ -14,27 +14,25 @@ export default function Home() {
   return (
     <Container>
       <HeroFlex align="flex-start">
-        <ContentWrapper data-aos="fade-left" data-aos-duration="1000">
+        <ContentWrapper>
           <h1>Iván Barrientos Lema 👋</h1>
           <h2>Ingeniero Informático</h2>
           <p>
-            Graduado en la Universidad de A Coruña. Desarrollador Fullstack de
-            Java y React con 2 años de experiencia. Habilidad en la creación de
+            Graduado en la Universidad de A Coruña en Ingeniería de Software y Computación. 
+            Desarrollador Fullstack de Java y React con 2 años de experiencia. Habilidad en la creación de
             Inteligencias Artificiales. Aptitudes en diseño gráfico y creación
             de contenido para poder ofrecer una experiencia de usuario inmersiva
             y atractiva en todo tipo de interfaces.
           </p>
         </ContentWrapper>
         <RoundImage
-          data-aos="fade-right"
-          data-aos-duration="1000"
           src={ProfilePicture}
           alt="Picture of Ivan"
           width="150px"
           height="150px"
         />
       </HeroFlex>
-      <Timeline />
+      <Timeline/>
     </Container>
   );
 }
@@ -70,3 +68,4 @@ const HeroFlex = styled(Flex)`
     flex-direction: column-reverse;
   }
 `;
+

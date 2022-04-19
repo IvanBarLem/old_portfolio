@@ -12,7 +12,7 @@ export const Timeline = () => {
   const [isShowingFullTimeline, showFullTimeline] = useState(false);
 
   const Step = ({ title, children }: ChildrenStringProps) => (
-    <StepLi data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+    <StepLi data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
       <div>
         <svg viewBox="0 0 24 24">
           <g
@@ -51,7 +51,7 @@ export const Timeline = () => {
           oculares en imágenes oftalmológicas.
         </Step>
         <Step title="Me uno a Altia">
-          Realizo prácticas en empresa en{" "}
+          Realizo prácticas curriculares en {" "}
           <a
             href="https://www.altia.es/es/altia"
             target="_blank"
@@ -67,7 +67,7 @@ export const Timeline = () => {
       <Year>2016</Year>
       <ul>
         <Step title="Comienzo en la Universidad 👶🏻">
-          Empieza una nueva etapa estudiando Ingeniería Informática en la
+          Empiezo una nueva etapa estudiando Ingeniería Informática en la
           Universidad de A Coruña.
         </Step>
       </ul>
@@ -81,18 +81,16 @@ export const Timeline = () => {
       <Year>2022</Year>
       <ul>
         <Step title="Nuevo proyecto 💊">
-          Una vez más con la ayuda del{" "}
+          Inicio un nuevo proyecto en colaboración con el{" "}
           <a
-            href="http://www.varpa.es/"
+            href="https://www.idisantiago.es/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Grupo de Investigación VARPA
-          </a>{" "}
-          da comienzo un proyecto de desarrollo software que consiste en la
-          creación de una plataforma clínica para la gestión de pacientes y
-          dosificación inteligente de medicamentos integrando modelos
-          predictivos de farmacocinética.
+            Instituto de Investigación Sanitaria de Santiago de Compostela
+          </a>.{" "}
+           Este proyecto consiste en el desarrollo software de una plataforma clínica, integrando gestión de pacientes y
+          dosificación de medicamentos a través de modelos predictivos.
         </Step>
         <Step title="Publicación del primer artículo ⭐">
           <a
@@ -118,10 +116,6 @@ export const Timeline = () => {
               degeneration.
             </b>
           </i>
-        </Step>
-        <Step title="Resultado de la propuesta">
-          El proyecto es seleccionado y se expone en la Conferencia
-          Internacional.
         </Step>
       </ul>
       <Divider />
@@ -171,7 +165,7 @@ export const Timeline = () => {
           Computación.
         </Step>
         <Step title="Finaliza el desarrollo del Trabajo de Fin de Grado 🎯">
-          Después 6 meses consigo alcanzar el objetivo propuesto y finalizo el
+          Después de 6 meses consigo alcanzar el objetivo propuesto y finalizo el
           desarrollo de la aplicación.{" "}
           <a
             href="https://ruc.udc.es/dspace/handle/2183/29849"

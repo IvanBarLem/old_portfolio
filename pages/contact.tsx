@@ -11,7 +11,7 @@ export default function Contact() {
     <Container title="Contacto - Iván Barrientos Lema">
       <HeroFlex align="flex-start">
         <Image
-          data-aos="fade-left"
+          data-aos="zoom-in-up"
           data-aos-delay="500"
           data-aos-duration="1000"
           src={ProfilePicture}
@@ -20,7 +20,7 @@ export default function Contact() {
           height="500px"
         />
         <ContentWrapper
-          data-aos="fade-right"
+          data-aos="fade-in-down"
           data-aos-delay="500"
           data-aos-duration="1000"
         >
@@ -73,5 +73,7 @@ const ContentWrapper = styled.div<StringProps>`
 
   @media ${devices.mobileL} {
     margin-top: 2rem;
+    padding-left: 0rem;
+
   }
 `;

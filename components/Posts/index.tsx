@@ -17,7 +17,7 @@ export const Posts = ({ title }: StringProps) => {
         return (
           <Link href={`/blog/${convertToSlug(item.title)}`} key={id}>
             <Item
-              data-aos="fade-left"
+              data-aos="zoom-in-up"
               data-aos-delay="100"
               data-aos-duration="1000"
             >

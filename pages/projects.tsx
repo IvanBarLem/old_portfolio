@@ -19,7 +19,8 @@ export default function Testimonials() {
         .
         <br />
       </Paragraph>
-      <Projects />
+      Actualmente no hay ningún proyecto disponible.
+      {/* <Projects /> */}
     </Container>
   );
 }

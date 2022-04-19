@@ -7,7 +7,7 @@ export default function Blog() {
     <Container title="Blog - Lasha Kakabadze">
       <h1>Blog 📖</h1>
       <Paragraph>
-        En los últimos años, me he dado cuenta que todo el esfuerzo que he
+       {/* En los últimos años, me he dado cuenta que todo el esfuerzo que he
         empleado en la carrera lo podía aprovechar para{" "}
         <b>enseñar todo lo aprendido</b>. De esta manera he decidido escribir
         estos blogs, con el objetivo de <b>reforzar los conocimientos</b> ya
@@ -18,9 +18,10 @@ export default function Blog() {
         refuerzo el progreso y apoyo la formación que estoy teniendo. Como son
         de ayuda para mí, también lo pueden ser para otras personas, por este
         motivo he decidido compartirlos, espero que te sean de ayuda y que
-        aprendas algo nuevo.
+        aprendas algo nuevo.*/}
       </Paragraph>
-      <Posts title="Todas las publicaciones" />
+      Actualmente no hay ninguna entrada disponible.
+      {/* <Posts title="Todas las publicaciones" /> */}
     </Container>
   );
 }

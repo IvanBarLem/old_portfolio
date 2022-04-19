@@ -22,7 +22,7 @@ export const Projects = () => {
               rel="noopener noreferrer"
             >
               <Item
-                data-aos="fade-left"
+                data-aos="zoom-in-up"
                 data-aos-delay="100"
                 data-aos-duration="1000"
               >

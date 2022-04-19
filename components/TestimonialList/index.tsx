@@ -21,7 +21,7 @@ export const TestimonialList = () => {
         <Item
           isLeft={id % 2 !== 0}
           key={id}
-          data-aos={id % 2 === 0 ? "zoom-in-right" : "zoom-in-left"}
+          data-aos={id % 2 === 0 ? "zoom-in-up-right" : "zoom-in-up-left"}
         >
           {item.picture && (
             <Image

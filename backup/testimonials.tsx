@@ -1,9 +1,10 @@
-import Container from "components/Layout/Container";
+/*import Container from "components/Layout/Container";
 import { TestimonialList } from "components/TestimonialList";
 import { Paragraph } from "pages/blog";
 
 export default function Testimonials() {
-  return (
+   return (
+     
     <Container title="Testimonials - Lasha Kakabadze">
       <h1>Testimonials</h1>
       <Paragraph>
@@ -21,5 +22,5 @@ export default function Testimonials() {
       </Paragraph>
       <TestimonialList />
     </Container>
-  );
-}
+  ); 
+}*/

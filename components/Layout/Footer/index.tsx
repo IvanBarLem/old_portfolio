@@ -25,7 +25,7 @@ export const Footer = ({ darkTheme }: StringProps) => {
             <FlexLinks>
               <Navigation href="/" text="Inicio" />
               <Navigation href="/projects" text="Proyectos" />
-              <Navigation href="/testimonials" text="Testimonials" />
+              {/* <Navigation href="/testimonials" text="Testimonials" /> */}
             </FlexLinks>
             <FlexLinks>
               <Navigation href="/blog" text="Blog" />
