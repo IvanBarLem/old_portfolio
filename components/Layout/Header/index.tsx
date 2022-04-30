@@ -13,9 +13,11 @@ export const Header = ({ darkTheme, changeTheme }: HeaderProps) => {
     <StickyNav darkTheme={darkTheme}>
       <Wrapper>
         <div>
-          <Navigation href="/" text="Home" />
+          <Navigation href="/" text="Inicio" />
+          <Navigation href="/projects" text="Proyectos" />
           <Navigation href="/blog" text="Blog" />
-          <Navigation href="/testimonials" text="Testimonials" />
+          <Navigation href="/contact" text="Contacto" />
+          {/* <Navigation href="/testimonials" text="Testimonials" /> */}
         </div>
         <button onClick={changeTheme} aria-label="change-theme">
           <svg

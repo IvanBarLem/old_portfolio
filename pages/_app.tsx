@@ -7,6 +7,10 @@ import { GlobalStyle } from "styles/globalStyles";
 import "styles/nprogress.css";
 import "public/assets/fonts/style.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const NProgress = require("nprogress");
 NProgress.configure({ showSpinner: false });
 
@@ -27,6 +31,10 @@ router.events.on("routeChangeComplete", stopProgressBar);
 router.events.on("routeChangeError", stopProgressBar);
 
 export default function App({ Component, pageProps, router }: AppProps) {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <ThemeProvider>
       <GlobalStyle />

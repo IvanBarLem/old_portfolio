@@ -2,44 +2,37 @@ import Link from "next/link";
 import styled from "styled-components";
 import Image from "next/image";
 import { Timeline } from "components/Timeline";
-import { Projects } from "components/Projects";
-import { Posts } from "components/Posts";
 import Container from "components/Layout/Container";
 import { StringProps } from "lib/types";
 import { devices } from "lib/displayDevice";
 
 import { Flex } from "components/Layout/Container/styles";
 
-import ProfilePicture from "public/assets/png/Lasha.png";
+import ProfilePicture from "public/assets/jpg/Ivan.jpg";
 
 export default function Home() {
   return (
     <Container>
       <HeroFlex align="flex-start">
         <ContentWrapper>
-          <h1>Iván Barrientos Lema</h1>
-          <h2>React.js Developer</h2>
+          <h1>Iván Barrientos Lema 👋</h1>
+          <h2>Ingeniero Informático</h2>
           <p>
-            Passionate React Developer with 3+ years of experience blending the
-            design with programming skills to deliver an immersive and engaging
-            user experience through efficient website development, proactive
-            feature optimization, and relentless debugging –&nbsp;
-            {" while you're here "}
-            <Link href="/about">
-              <a>learn more about me.</a>
-            </Link>
+            Graduado en la Universidad de A Coruña en Ingeniería de Software y Computación. 
+            Desarrollador Fullstack de Java y React con 2 años de experiencia. Habilidad en la creación de
+            Inteligencias Artificiales. Aptitudes en diseño gráfico y creación
+            de contenido para poder ofrecer una experiencia de usuario inmersiva
+            y atractiva en todo tipo de interfaces.
           </p>
         </ContentWrapper>
         <RoundImage
           src={ProfilePicture}
-          alt="Picture of Lasha"
+          alt="Picture of Ivan"
           width="150px"
           height="150px"
         />
       </HeroFlex>
-      <Projects />
-      <Posts title="Featured Stories" />
-      <Timeline />
+      <Timeline/>
     </Container>
   );
 }
@@ -75,3 +68,4 @@ const HeroFlex = styled(Flex)`
     flex-direction: column-reverse;
   }
 `;
+
