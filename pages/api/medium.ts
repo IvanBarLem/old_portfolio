@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-export const mediumUserUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@toxorial`;
+export const mediumUserUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@IvanBarLem`;
 
 export default async function handler(
   req: NextApiRequest,
